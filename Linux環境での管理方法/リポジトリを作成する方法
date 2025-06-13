@@ -1,0 +1,61 @@
+# ディレクトリとファイルの管理
+<br>
+<br>
+<br>
+
+ ## 1.新しいGitリポジトリを作る方法
+
+### **新しいフォルダを作成**（まだ作ってなければ）
+| mkdir my-new-repo |
+|--|
+|**cd my-new-repo** |
+
+
+<br>
+-------------------
+
+<br>
+
+
+## Gitリポジトリを初期化
+| git init |
+|--|
+| これで、そのフォルダがGitリポジトリとして管理されます。 |
+
+## ファイルを追加してコミット
+
+| echo "# My New Repo" > README.md |
+|--|
+| **git add README.md** |
+| **git commit -m "初回コミット"** |
+
+
+<br>
+-------------------
+
+<br>
+
+
+## もしGitHubに連携したい場合（オプション）
+
+1.  GitHubで空のリポジトリを作成（名前は同じでも違ってもOK）
+    
+2.  リモートURLを追加
+    
+| `git remote add origin git@github.com:ユーザー名/リポジトリ名.git`  |
+|--|
+
+`git remote add origin git@github.com:ユーザー名/リポジトリ名.git` 
+
+3.  mainブランチ名を設定（もしまだなら）
+
+| `git branch -M main`  |
+|--|
+
+4.  プッシュ
+  
+| git push -u origin main |
+|--|
+|  |
+
+### ※GitHubで空のリポジトリを作成せずに、ローカルから直接GitHubにリポジトリを作成してプッシュすることは、GitHubのAPIやGitHub CLIツール（`gh`）を使えば可能です。
