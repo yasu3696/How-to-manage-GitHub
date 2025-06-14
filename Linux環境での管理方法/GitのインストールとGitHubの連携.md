@@ -28,6 +28,7 @@
 
 <br>
 
+
  ## 2.Gitの初期設定 
 | git config --global user.name "あなたの名前" |
 |--|
